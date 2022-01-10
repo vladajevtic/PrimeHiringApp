@@ -23,7 +23,7 @@ const developersShema = new mongoose.Schema({
         required: false
     },
     pricePerHour:{
-        type: Decimal128,
+        type: String,
         required: true
     },
     technology:{

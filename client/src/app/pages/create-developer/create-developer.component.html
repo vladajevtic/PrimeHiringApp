@@ -1,0 +1,165 @@
+<div class="row">
+    <div class="col-12">
+      <form [formGroup]="createDeveloperForm!" (ngSubmit)="onSubmit()">
+  
+        <div class="row">
+            <div class="d-flex col-12 align-items-center justify-content-center form-group">
+            
+              <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  id="name"
+                  formControlName="name">
+                  <mat-icon matSuffix>badge</mat-icon>
+              </mat-form-field>
+            
+        </div>
+            <div class="d-flex col-12 align-items-center justify-content-center form-group">
+                <mat-form-field appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input
+                    type="email"
+                    formControlName="email"
+                    placeholder=""
+                    matInput
+                  >
+                  <mat-icon matSuffix>email</mat-icon>
+                </mat-form-field>
+              </div>
+              
+
+              <div class="d-flex col-12 align-items-center justify-content-center form-group">
+                <mat-form-field appearance="outline">
+                  <mat-label>Phone number</mat-label>
+                  <input
+                    type="text"
+                    formControlName="phoneNumber"
+                    placeholder=""
+                    matInput
+                  >
+                  <mat-icon matSuffix>phone</mat-icon>
+                </mat-form-field>
+              </div>
+
+              <div class="d-flex col-12 align-items-center justify-content-center form-group">
+                <mat-form-field appearance="outline">
+                  <mat-label>location</mat-label>
+                  <input
+                    type="text"
+                    formControlName="location"
+                    placeholder=""
+                    matInput
+                  >
+                  <mat-icon matSuffix>place</mat-icon>
+                </mat-form-field>
+              </div>
+
+              <div class="d-flex col-12 align-items-center justify-content-center form-group">
+                <mat-form-field appearance="outline">
+                  <mat-label>Picture</mat-label>
+                  <input
+                    type="text"
+                    formControlName="profilePicture"
+                    placeholder=""
+                    matInput
+                  >
+                  <mat-icon matSuffix>photo_camera</mat-icon>
+                </mat-form-field>
+              </div>
+
+              <div class="d-flex col-12 align-items-center justify-content-center form-group">
+                <mat-form-field appearance="outline">
+                  <mat-label>prizePerHour</mat-label>
+                  <input
+                    type="number"
+                    formControlName="prizePerHour"
+                    placeholder=""
+                    matInput
+                  >
+                  <mat-icon matSuffix>payments</mat-icon>
+                </mat-form-field>
+              </div>
+
+              <div class="d-flex col-12align-items-center justify-content-center form-group">
+                <mat-form-field appearance="outline">
+                  <mat-label>technology</mat-label>
+                  <input
+                    type="text"
+                    formControlName="technology"
+                    placeholder=""
+                    matInput
+                  >
+                  <mat-icon matSuffix>biotech</mat-icon>
+                </mat-form-field>
+              </div>
+
+            <div class="d-flex col-12 align-items-center justify-content-center form-group">
+              <mat-form-field appearance="outline">
+                <mat-label>Description</mat-label>
+                <input
+                type="text"
+                formControlName="description"
+                placeholder=""
+                matInput>
+                <mat-icon matSuffix>description</mat-icon>
+              </mat-form-field>
+            </div>
+            
+            
+            <div class="d-flex col-12 align-items-center justify-content-center form-group">
+                <mat-form-field appearance="outline">
+                  <mat-label>yearsOfExperience</mat-label>
+                  <input
+                    type="text"
+                    formControlName="yearsOfExperience"
+                    placeholder=""
+                    matInput
+                  >
+                  <mat-icon matSuffix>settings_accessibility</mat-icon>
+                </mat-form-field>
+              </div>
+
+              <div class="d-flex col-12 align-items-center justify-content-center form-group">
+                <mat-form-field appearance="outline">
+                  <mat-label>nativeLanguage</mat-label>
+                  <input
+                    type="text"
+                    formControlName="nativeLanguage"
+                    placeholder=""
+                    matInput
+                  >
+                  <mat-icon matSuffix>translate</mat-icon>
+                </mat-form-field>
+              </div>
+
+              <div class="d-flex col-12 align-items-center justify-content-center form-group">
+                <mat-form-field appearance="outline">
+                  <mat-label>LinkedInProfileLink</mat-label>
+                  <input
+                    type="text"
+                    formControlName="LinkedInProfileLink"
+                    placeholder=""
+                    matInput
+                  >
+                  <mat-icon matSuffix>link</mat-icon>
+                </mat-form-field>
+              </div>
+          
+        </div>
+        <div class="d-flex col-12 align-items-center justify-content-center form-group">
+          <button
+            color="primary"
+            class="mb-1"
+            [disabled]="!createDeveloperForm?.valid"
+            type="submit"
+            mat-raised-button
+          >
+            <mat-icon>create</mat-icon>
+            <span class="ml-1">Create</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
